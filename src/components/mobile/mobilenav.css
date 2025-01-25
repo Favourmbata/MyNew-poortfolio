@@ -1,0 +1,79 @@
+/* mobilenav.css */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .navbar-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #020E7C;
+  }
+  
+  .menu-button {
+    font-size: 2rem;
+    color: #020E7C;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #020E7C;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 10;
+  }
+  
+  .mobile-menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    background-color: #020E7C;
+  }
+  
+  .mobile-menu-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+  
+  .close-button {
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .mobile-menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    width: 100%;
+  }
+  
+  .mobile-menu-item {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .mobile-menu-item:hover {
+    color: #9BD2FE;
+  }
+  
+  .mobile-menu-item:active {
+    color: #7EB4F0;
+  }
+  

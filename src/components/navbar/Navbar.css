@@ -1,0 +1,24 @@
+/* navbar.css */
+
+/* Show the DesktopNav only on medium screens and larger */
+.desktop-nav {
+    display: none;
+  }
+  
+  @media (min-width: 768px) {
+    .desktop-nav {
+      display: block;
+    }
+  }
+  
+  /* Show the MobileNavbar only on small screens */
+  .mobile-nav {
+    display: block;
+  }
+  
+  @media (min-width: 768px) {
+    .mobile-nav {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,57 @@
+/* desktop.css */
+
+.desktop-nav {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    justify-content: space-between;
+    padding: 0.3rem 1.3rem;
+    width: 100%; /* Ensure the parent takes the full width */
+    gap: 1.5rem; /* Space between the logo and nav items */
+    height: 70px; /* Set a fixed height for the nav bar */
+}
+
+.logo {
+    font-size: 1.675rem; /* text-3xl */
+    font-weight: bold;
+    color: #020E7C;
+    flex-shrink: 0; /* Prevent shrinking of the logo */
+}
+
+.nav-items {
+    display: flex;
+    gap: 1.5rem; /* space-x-6 */
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    flex-grow: 1; /* Allow the nav items to take available space */
+    justify-content: flex-end; /* Align items to the right */
+    height: 100%; /* Ensure nav items are vertically centered */
+    align-items: center; /* Center the items vertically */
+}
+
+.nav-item {
+    font-size: 1.5rem; /* text-[24px] */
+    font-weight: bold;
+    color: #50555C;
+    text-decoration: none; /* Remove underline */
+}
+
+.nav-item-home {
+    color: #020E7C;
+}
+
+.nav-item:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+}
+
+.contact-link {
+    font-size: 1.5rem; /* text-[24px] */
+    font-weight: bold;
+    color: #50555C;
+    text-decoration: none; /* Remove underline */
+    align-self: center; /* Align the contact link in the center vertically */
+}
+
+.contact-link:hover {
+    color: #3b82f6; /* hover:text-blue-500 */
+}
