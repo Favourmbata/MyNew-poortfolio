@@ -1,11 +1,13 @@
-/* Contact.css */
+
 .contact-container {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 32px 16px;
+    padding-bottom: 30px;
+    margin-top: 0;
+    /* padding: 32px 16px; */
   }
   
   .contact-wrapper {
@@ -33,7 +35,7 @@
   }
   
   .contact-title {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #333333;
     margin-bottom: 16px;
@@ -44,11 +46,13 @@
   }
   
   .contact-right {
-    width: 50%;
+    width: 80%;
     background-color: #FFFFFF;
     border-radius: 0.25rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     padding: 16px;
+    
+    
   }
   
   .contact-form {
@@ -96,6 +100,7 @@
   .center-button{
     display: flex;
     justify-content: center;
+    width: 100%;
   }
   .contact-button:hover {
     background-color: #1D4ED8;

@@ -3,6 +3,8 @@ import Navbar from '../../components/navbar/Navbar';
 import './Project.css';
 
 const Projects = () => {
+
+    
   const projects = [
     {
       name: "Food Safety",
