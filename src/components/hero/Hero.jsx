@@ -94,12 +94,10 @@
 // };
 
 // export default Hero;
-
-
 import React, { useState } from 'react';
-import CV from "../../assets/Favour-Mbata_Frontend-Engineer_Resumè.pdf";
-import favourImage from "../../assets/favur.png";
-import './Hero.css'; // Import the extracted CSS
+import favourImage from "../../assets/favur.png"
+import './Hero.css';
+import CV from '../../assets/Favour-Mbata_Frontend-Engineer_Resumè.pdf';
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -110,69 +108,40 @@ const Hero = () => {
 
   return (
     <section className="hero-section">
-      <div className="hero-container">
-        <div className="hero-content">
-        
-          <div className="hero-text">
-           
-            <div className="py-6">
-              <h2 className="hero-heading">
-                Hello, I'm Favour Mbata
-              </h2>
-              <h1 className="hero-subheading">Software Developer</h1>
-            </div>
-
-            <div>
-              <p className="hero-description">
-                I Build Scalable Modern Websites For the Future
-              </p>
-            </div>
-
-            <div className="hero-button-wrapper">
-              <a href={CV} download>
-                <button className="hero-button">
-                  Resume
-                </button>
-              </a>
-            </div>
-
-            <div className="hero-see-more" style={{ opacity: 1 }}>
-              <p className="hero-see-more-text" onMouseMove={toggleVisibility}>
-                See more
-              </p>
-              
-              <div
-                className={`hero-border ${isVisible ? 'visible' : ''}`}
-              />
-
-              <div
-                className={`hero-more-content ${isVisible ? 'visible' : ''}`}
-                onMouseMove={() => setIsVisible(true)}
-                onMouseLeave={() => setIsVisible(false)}
-              >
-                <p className="hero-more-description">
-                  I am a Full Stack Engineer specializing in building highly
-                  scalable, responsive, and user-friendly web applications. These
-                  days, I primarily work with Next.js, React, and TypeScript. I am
-                  well-versed and experienced in a variety of technology stacks,
-                  including JavaScript, Python, Django, and Bash.
-                </p>
-
-                <div
-                  className={`hero-more-border ${isVisible ? 'visible' : ''}`}
-                />
-              </div>
-            </div>
+      <div className="hero-text">
+        <div>
+          <div className="hero-title">
+            <span>Hello, I'm Favour Mbata</span>
           </div>
+          <h1 className="hero-subtitle">Software Developer</h1>
+        </div>
 
-          <div className="hero-image-wrapper">
-            <img
-              src={favourImage}
-              alt="favour"
-              className="hero-image"
-            />
+        <div className="hero-description">
+          <span>I Build Scalable Modern Websites For the Future</span>
+        </div>
+
+        <div>
+          <a href={CV} download>
+            <button className="hero-button">Resume</button>
+          </a>
+        </div>
+
+        <div className="hero-more-info" onMouseMove={toggleVisibility}>
+          <p className="text-foreground/50" style={{fontSize:"20px"}}>See more</p>
+          <div className={isVisible ? 'visibile' : 'invisible'} />
+          <div onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
+            <p className={`hero-description ${isVisible ? 'visible' : 'invisible'}`}>
+              I am a Full Stack Engineer specializing in building highly scalable, responsive, and user-friendly
+              web applications. These days, I primarily work with Next.js, React, and TypeScript. I am
+              well-versed and experienced in a variety of technology stacks, including JavaScript, Python, Django, and Bash.
+            </p>
+            <div className={`visible ${isVisible ? 'visibile' : 'invisible'}`} />
           </div>
         </div>
+      </div>
+
+      <div className='hero-image-container'>
+        <img src={favourImage} alt="favour" className="hero-image" />
       </div>
     </section>
   );

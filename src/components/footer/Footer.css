@@ -1,0 +1,28 @@
+/* footer.css */
+
+.footer {
+    text-align: center;
+    height: 100%;
+  }
+  
+  .footer-heading {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #020E7C; 
+    margin-bottom: 1.3rem;
+  }
+  
+  .footer-icons-container {
+    display: flex;
+    gap: 1.5rem; /* 6 gap */
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.7rem; 
+    margin-bottom: 1rem;
+  }
+  
+  .footer-icon {
+    width: 2.5rem; /* 10px */
+    cursor: pointer;
+  }
+  

@@ -33,7 +33,8 @@ import './desktop.css'; // Import the desktop.css file
 const DesktopNav = () => {
   return (
     <nav className="desktop-nav">
-      <div className="logo">
+    <div className='desktop-navbar-links'>
+    <div className="logo">
         <h1>My Portfolio</h1>
       </div>
 
@@ -47,6 +48,8 @@ const DesktopNav = () => {
       <Link to="/contact" className="contact-link">
         Contact me
       </Link>
+    </div>
+      
     </nav>
   );
 };
