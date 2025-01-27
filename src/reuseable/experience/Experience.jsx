@@ -80,7 +80,7 @@ const Experience = () => {
             <p className="text-center text-sm text-gray-500">Semicolon Africa</p>
           </div>
 
-          <div className="bg-white shadow-md rounded-lg p-4">
+          <div className="bg-white shadow-md rounded-lg p-4 h-64">
             <img src={henleyCertImage} alt="Henley Business School Certification" className="w-12 h-12 mx-auto mb-4" />
             <h4 className="text-lg font-medium text-center">Business Administration and Entrepreneurship</h4>
             <p className="text-center text-sm text-gray-500">Henley Business School</p>

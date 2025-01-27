@@ -35,7 +35,7 @@ const DesktopNav = () => {
     <nav className="desktop-nav">
     <div className='desktop-navbar-links'>
     <div className="logo">
-        <h1>My Portfolio</h1>
+        <h1 className=''>My Portfolio</h1>
       </div>
 
       <ul className="nav-items">

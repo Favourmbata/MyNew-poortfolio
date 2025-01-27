@@ -27,7 +27,7 @@ const Contact = () => {
                 type="text"
                 name='name'
                 autoComplete='name'
-                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#020E7C]"
                 placeholder="Your full name"
               />
             </div>
@@ -35,7 +35,7 @@ const Contact = () => {
               <label className="block text-gray-700 font-medium mb-2">Email Address</label>
               <input
                 type="email"
-                className="w-full  p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full  p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#020E7C]"
                 placeholder="Your email address"
 
               />
@@ -44,12 +44,12 @@ const Contact = () => {
               <label className="block text-gray-700 font-medium mb-2">Message</label>
               <textarea
                 rows="5"
-                className="w-full resize-y p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full resize-y p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#020E7C]"
                 placeholder="Your message"
               />
             </div>
             <div className='flex justify-center items-center'>
-            <button className="w-[50%] bg-blue-600 text-white p-3  mb-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+            <button className="w-[50%] bg-[#020E7C] text-white p-3  mb-4 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
               Submit
             </button>
             </div>

@@ -3,6 +3,18 @@ body{
     @apply bg-[#dbe9ff] h-[100vh];
     scroll-behavior: smooth;
 }
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1 {
+    font-family: 'Syncopate', sans-serif;
+  }
+  
+  p {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
 .desktop-nav {
     display: flex;
     align-items: center;

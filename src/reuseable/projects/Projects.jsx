@@ -57,7 +57,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <article key={index} className="project-card">
               <div className="project-card-inner">
-                <p>{project.name}</p>
+                <p className='text-lg'>{project.name}</p>
                 <div className="mb-7">
                   <h1 className="font-bold text-xl">{project.title}</h1>
                   <p>{project.description}</p>

@@ -1,5 +1,5 @@
+
 import React from 'react';
-import './Stack.css'; // Import the extracted CSS file
 import Javascript from "../../assets/logo-javascript.svg";
 import python from "../../assets/icons8-python-48.png";
 import html from "../../assets/pngwing.com.png";
@@ -45,31 +45,31 @@ const Stack = () => {
     { imgSrc: swagger, name: "Swagger" },
     { imgSrc: postman, name: "Postman" }
   ];
-  
+
   return (
-    
-    <section>
+    <section className="bg-gray-50 py-12">
       <Navbar />
-      <div className='tech-stack-container'>
-        <div>
-          <h3 className="tech-stack-heading">
-            <span className="inline-block overflow-hidden">Tech Stack</span>
-          </h3>
-        </div>
-        <div className="tech-stack-grid">
+      <div className="max-w-6xl mx-auto">
+        <h3 className="text-3xl font-bold text-center mb-12 text-gray-900">
+          Tech Stack
+        </h3>
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
           {techStack.map((tech, index) => (
-            <span key={index} className="tech-stack-item">
-              <a className="tech-stack-link">
+            <div
+              key={index}
+              className="group relative flex flex-col items-center justify-center transition transform hover:scale-105"
+            >
+              <div className="relative w-24 h-24 lg:w-16 lg:h-16 bg-white shadow-md rounded-xl p-4 flex items-center justify-center group-hover:shadow-lg transition-shadow duration-300">
                 <img
                   src={tech.imgSrc}
                   alt={tech.name}
-                  className="tech-stack-image"
+                  className="w-full h-full object-contain"
                 />
-                <p className="tech-stack-text">
-                  {tech.name}
-                </p>
-              </a>
-            </span>
+              </div>
+              <p className="mt-2 text-center text-gray-700 font-medium">
+                {tech.name}
+              </p>
+            </div>
           ))}
         </div>
       </div>

@@ -8,7 +8,7 @@ const MobileNavbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-title">
-        <h1>My Portfolio</h1>
+        <h1 className='text-[14px]'>My Portfolio</h1>
       </div>
       <button
         className="menu-button"
@@ -21,7 +21,7 @@ const MobileNavbar = () => {
         <div className="mobile-menu">
           <div className="mobile-menu-header">
             <div className="mobile-menu-title">
-              <h1>My Portfolio</h1>
+              <h1 className='text-sm'>My Portfolio</h1>
             </div>
 
             <button
