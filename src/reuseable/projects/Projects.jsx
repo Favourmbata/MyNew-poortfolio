@@ -6,6 +6,21 @@ const Projects = () => {
 
     
   const projects = [
+     {
+  name: "GAMAI",
+  title: "A school management system for academics and administration.",
+  description: "Includes role-based dashboards for instructors, learners, admins, and super admins.",
+  techStack: ['Next.js', 'Tailwind', 'Github'],
+  link: "https://gamai.com.ng/"
+},
+
+     {
+      name: "MedFair Healthcare Application",
+      title: "Experiencing The beauty of digital Medical Attention",
+      description: "24/7 Availability of Doctors",
+      techStack: ['React', 'Tailwind', 'Github'],
+      link: "https://medfair-landing-page.vercel.app/"
+    },
     {
       name: "Food Safety",
       title: "Empowering Food Safety across Africa's Market",
@@ -13,13 +28,7 @@ const Projects = () => {
       techStack: ['NextJs', 'Tailwind', 'Github'],
       link: "https://fs4a-innovartechs-projects.vercel.app"
     },
-    {
-      name: "MedFair Healthcare Application",
-      title: "Experiencing The beauty of digital Medical Attention",
-      description: "24/7 Availability of Doctors",
-      techStack: ['React', 'Tailwind', 'Github'],
-      link: "https://medfair-landing-page.vercel.app/"
-    },
+   
     {
       name: "Full Gospel Church Of God",
       title: "One Church with multiple Locations",
