@@ -2,8 +2,8 @@
 import React, { useState } from 'react';
 import favourImage from "../../assets/favur.png"
 import './Hero.css';
-import CV from '../../assets/Favour-Mbata_Frontend-Engineer_Resumè.pdf';
 
+import CV from "../../assets/resume.pdf"
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -36,9 +36,9 @@ const Hero = () => {
           <div className='border bottom-4 border-[#707070]' />
           <div onMouseMove={() => setIsVisible(true)} onMouseLeave={() => setIsVisible(false)}>
             <p >
-              I am a Full Stack Engineer specializing in building highly scalable, responsive, and user-friendly
+              I am a Frontend Engineer specializing in building highly scalable, responsive, and user-friendly
               web applications. These days, I primarily work with Next.js, React, and TypeScript. I am
-              well-versed and experienced in a variety of technology stacks, including JavaScript, Python, Django, and Bash.
+              well-versed and experienced in a variety of technology stacks, including JavaScript and Bash.
             </p>
             <div className='border bottom-4 border-[#707070]'/>
           </div>
