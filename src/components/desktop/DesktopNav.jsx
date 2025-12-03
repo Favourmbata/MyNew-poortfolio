@@ -27,7 +27,7 @@
 
 
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router';
 import './desktop.css'; // Import the desktop.css file
 
 const DesktopNav = () => {
